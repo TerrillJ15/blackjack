@@ -1,0 +1,108 @@
+#main {
+  height: 100vh;
+  background-color: #0f6331;
+  min-width: 300px;
+  overflow: auto;
+}
+
+#table {
+  position: relative;
+  text-align: center;
+  color: white;
+  max-height: 100vh;
+}
+
+#dealer {
+  position: absolute;
+  top: 24px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#dealer-hand {
+  position: absolute;
+  top: 64px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#stats {
+  position: absolute;
+  top: 30%;
+  left: 8px;
+  text-align: left;
+}
+
+#messages {
+  position: absolute;
+  top: 33%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bolder;
+}
+
+.game-card {
+  position: relative;
+  display: inline-block;
+  font-size: 64px;
+  line-height: 68px;
+  height: 68px;
+  overflow: hidden;
+  margin: 2px 4px;
+  background-image: url("assets/card-bg.png");
+  background-size: cover;
+}
+
+#actions {
+  position: absolute;
+  top: 30%;
+  right: 8px;
+}
+
+#player {
+  position: absolute;
+  bottom: 64px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#player-hand {
+  position: absolute;
+  bottom: -32px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .game-card {
+    font-size: 96px;
+    line-height: 102px;
+    height: 102px;
+  }
+
+  #player {
+    bottom: 115px;
+  }
+  
+  #dealer-hand {
+    top: 84px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .game-card {
+    font-size: 128px;
+    line-height: 136px;
+    height: 136px;
+  }
+
+  #player {
+    bottom: 164px;
+  }
+  
+  #dealer-hand {
+    top: 100px;
+  }
+}
